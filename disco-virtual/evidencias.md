@@ -14,9 +14,11 @@ Esse Documento tem como objetivo mostrar dois pontos envolvendo montagem de um D
 
 Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para analise já se econtram instalados.
 
-## Arquivo
+Nesse tutorial, utilizei uma imgem de disco baseado na Virtualização do Windows, Hyper-V. Mas pode ser utilizado para converter arquivos de disco de vários tipos de virtualizações.
 
-imgem.vhdx .
+## Exetensão do arquivo
+
+.vhdx 
 
 ## Tipo de Vitualização
 
@@ -35,7 +37,7 @@ Provavelmente será necessário instalar o pacote libguestfs tools.
 
 <img src="captura.png">
 
-Mas se você estiver usando uma estação virtual forense, tipo Sans-Sift, no virtualbox, precisará montar esse disco como disco virtual adicionando á máquina virtual. Para isso será necessário seguir alguns passos.
+Se estiver usando uma estação virtual forense, tipo Sans-Sift, no virtualbox, precisará montar esse disco como disco virtual adicionando á máquina virtual. Para isso será necessário seguir alguns passos.
 
 ## Montagem de Disco virtual em estação Linux Forense Virtual - Virtualbox
 
