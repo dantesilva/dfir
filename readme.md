@@ -1,4 +1,4 @@
-# Repositório com tutoriais para análise forense e e Resposta a Incidente (Dfir)
+# Repositório com tutoriais para análise forense e Resposta a Incidente (Dfir)
 
 ## Escopo
 
