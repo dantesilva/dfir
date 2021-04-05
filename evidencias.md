@@ -44,6 +44,7 @@ Mas se você estiver usando uma estação virtual forense, tipo Sans-Sift, no vi
 <img src="virtualbox2.3.png">
 <img src="virtualbox2.4.png">
 <img src="virtualbox2.5.png">
+<img src="virtualbox2.6.png">
 
 3 - Montar o Disco como somente leitura na Estação Forenese virtual.
 
