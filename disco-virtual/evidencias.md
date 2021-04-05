@@ -2,7 +2,7 @@
 
 ## Escopo
 
-Primeiro Passo para realização de uma análise de Incidente é a coleta da evidência. Essa coleta pode ser feita de várias formas diferentes. Vamos nos concentrar aqui em um DUMP do disc Essa pode ser uma imagem forense, gerada por meio do ftk por exemplo, ou uma imagem de Máquina virtual que podem ter os seguintes formatos: vdi, vmdk, vmdkx, qcow, qcow2, etc..
+Primeiro Passo para realização de uma análise de Incidente é a coleta da evidência. Essa coleta pode ser feita de várias formas diferentes. Vamos nos concentrar aqui em um DUMP do disco. Essa pode ser uma imagem forense, gerada por meio do ftk por exemplo, ou uma imagem de Máquina virtual que podem ter os seguintes formatos: vdi, vmdk, vmdkx, qcow, qcow2, etc..
 
 Esse Documento tem como objetivo mostrar dois pontos envolvendo montagem de um Disco Vitual para analise:
 
