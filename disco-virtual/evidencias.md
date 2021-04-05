@@ -14,7 +14,7 @@ Esse Documento tem como objetivo mostrar dois pontos envolvendo montagem de um D
 
 Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para analise já se econtram instalados
 
-## Arquivo: 
+## Arquivo
 
 imgem.vhdx
 
@@ -24,9 +24,14 @@ imgem.vhdx
 
 Existem duas formas de explorar o arquivo no linux. Pode montar diretamente por meio do "mount", ou montar por meio de um hypervisor, por exemplo VirtualBox.
 
-# Para montar imagem de disco direto no Desktop linux:
+# Para montar imagem de disco direto no Desktop linux
 
- guestmount --add Caminho/arquivo/ imagem.vhdx --inspector --ro /ponto de montagem
+        # guestmount --add Caminho/arquivo/ imagem.vhdx --inspector --ro /ponto de montagem
+
+Provavelmente será necessário instalar o pacote libguestfs tools
+
+        # apt-get install libguestfs-tools
+
 
 <img src="captura.png">
 
@@ -78,7 +83,7 @@ Para montar o disco, basta dar comando "mount" como exemplo:
 
 <img src="sans3.png">
 
-Entrando no diretório /mnt/windows_mount , na estação sift poerá visualizar os arquivos do Windows montado.
+Entrando no diretório /mnt/windows_mount , na estação sift poderá visualizar os arquivos do Windows montado.
 
 Importante lembrar que,  para não haver problemas, é necessário montar como somente leitura.
 
