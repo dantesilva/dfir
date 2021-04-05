@@ -11,5 +11,5 @@ Esses vão sendo enumerados abaixo, conforme forem sendo disponibilizados.
 
 ### Conteúdos
 
-[Montagem de disco Virtual no Virtualbox](disco-virtual/evidencias.md)
+[Montagem de disco Virtual no Virtualbox](virtualbox/evidencias.md)
 
