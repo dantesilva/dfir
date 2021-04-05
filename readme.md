@@ -1,5 +1,7 @@
 # Repositório com tutoriais para análise forense e Resposta a Incidente (Dfir)
 
+<img src="dfir.png">
+
 ## Escopo
 
 Esse repositório tem por objetivo ter uma série de tutoriais e comando úteis para realizar Dfir. 
