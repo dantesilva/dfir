@@ -39,8 +39,8 @@ Mas se você estiver usando uma estação virtual forense, tipo Sans-Sift, no vi
 
         Vitualbox/ VM/ (Menu) Configurações/ Armazenamento/ Controlador Sata/ Acrescentar Disco rígido/ procurar disco virtual/ Depois do disco adicionado, clicar em "ok" pra salvar
 
-<img src="virtualbox2.1.png">
 <img src="virtualbox2.2.png">
+<img src="virtualbox2.1.png">
 <img src="virtualbox2.3.png">
 <img src="virtualbox2.4.png">
 <img src="virtualbox2.5.png">
