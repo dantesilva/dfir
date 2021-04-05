@@ -4,7 +4,10 @@
 
 Esse Documento mostra como fazer montagem de uma imgem de disco virtual direto em um Desktop Linux, ou em uma Estação Forense Virtual, baseada no Sans-Sift
 
+## Maneiras de "Explorar"
+
 Primeiro Passo para realização de uma análise de Incidente é a coleta da evidência. Essa pode ser uma imagem forense, gerada por meio do ftk por exemplo, ou uma imagem de Máquina virtual que podem ter os seguintes formatos: vdi, vmdk, vmdkx, qcow, qcow2, etc..
+Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para já se econtraram instalados
 
 # Tutorial para verificação de arquivo de máquina virtual infectada.
 
@@ -50,11 +53,11 @@ Obs: Talvez seja  necessário alterar a ordem do boot da máquina virtual durant
 
 3 - Montar o Disco como somente leitura na Estação Forenese virtual.
 
-    Quando a máquina virtual sans iniciar, entre como sudo e dê o seguinte comando para verificar se ele está encontrando o Disco virtual adicionado.
+Quando a máquina virtual sans iniciar, entre como sudo e dê o seguinte comando para verificar se ele está encontrando o Disco virtual adicionado.
 
         # fidisk -l
     
-    Lembrando que se esse disco estiver em primero, ele irá inverter a ordem dos discos. O Disco do da máquina virtual sans ele irá atribuir como sdb e o disco virtual adicionado ele irá atribuir como sda
+Lembrando que se esse disco estiver em primero, ele irá inverter a ordem dos discos. O Disco da máquina virtual sans, ele irá atribuir como sdb,  e o disco virtual adicionado ele irá atribuir como sda
 
 <img src="sans1.png">
 <img src="sans2.png">
