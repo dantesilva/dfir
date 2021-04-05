@@ -6,21 +6,21 @@ Primeiro Passo para realização de uma análise de Incidente é a coleta da evi
 
 Esse Documento tem como objetivo mostrar dois pontos envolvendo montagem de um Disco Vitual para analise:
 
-1 - Mostrar de maneira resumida, como montar um disco virtual em uma estação Desktop Linux
+1 - Mostrar de maneira resumida, como montar um disco virtual em uma estação Desktop Linux.
 
 2 - Mostrar como montar um disco virtual em uma estação virtual forense Sans Sift, baseado no virtualbox.
 
 ## Maneiras de "Explorar"
 
-Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para analise já se econtram instalados
+Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para analise já se econtram instalados.
 
 ## Arquivo
 
-imgem.vhdx
+imgem.vhdx .
 
 ## Tipo de Vitualização
 
- Windows Hyper-V
+ Windows Hyper-V .
 
 Existem duas formas de explorar o arquivo no linux. Pode montar diretamente por meio do "mount", ou montar por meio de um hypervisor, por exemplo VirtualBox.
 
@@ -28,9 +28,9 @@ Existem duas formas de explorar o arquivo no linux. Pode montar diretamente por 
 
         # guestmount --add Caminho/arquivo/ imagem.vhdx --inspector --ro /ponto de montagem
 
-Provavelmente será necessário instalar o pacote libguestfs tools
+Provavelmente será necessário instalar o pacote libguestfs tools.
 
-        # apt-get install libguestfs-tools
+        # apt-get install libguestfs-tools.
 
 
 <img src="captura.png">
@@ -39,7 +39,7 @@ Mas se você estiver usando uma estação virtual forense, tipo Sans-Sift, no vi
 
 ## Montagem de Disco virtual em estação Linux Forense Virtual - Virtualbox
 
-1 - Converter o arquivo. Para isso, pode utilizar o comando vboxmanage
+1 - Converter o arquivo. Para isso, pode utilizar o comando vboxmanage.
 
         vboxmanage clonehd inputFileName.vhdx outputFileName.vdi --format vdi
 
@@ -69,7 +69,7 @@ Quando a máquina virtual sans iniciar, entre como sudo e dê o seguinte comando
 
         # fidisk -l
     
-Lembrando que se esse disco estiver em primero, ele irá inverter a ordem dos discos. O Disco da máquina virtual sans, ele irá atribuir como sdb,  e o disco virtual adicionado,  ele irá atribuir como sda
+Lembrando que se esse disco estiver em primero, ele irá inverter a ordem dos discos. O Disco da máquina virtual sans, ele irá atribuir como sdb,  e o disco virtual adicionado,  ele irá atribuir como sda.
 
 <img src="sans1.png">
 <img src="sans2.png">
