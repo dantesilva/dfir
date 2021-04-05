@@ -58,7 +58,6 @@ Obs: Talvez seja  necessário alterar a ordem do boot da máquina virtual durant
 
 <img src="sans1.png">
 <img src="sans2.png">
-<img src="sans3.png">
 <img src="sans4.png">
 
 
