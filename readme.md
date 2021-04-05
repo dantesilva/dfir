@@ -1,4 +1,4 @@
-# Repositório com tutoriais para análise forense
+# Repositório com tutoriais para análise forense e e Resposta a Incidente (Dfir)
 
 ## Escopo
 
@@ -9,7 +9,7 @@ Esse repositório está em desenvolvimento. Com o passar do tempo, vou adicionan
 
 Esses vão sendo enumerados abaixo, conforme forem sendo disponibilizados.
 
-### Conteúdos.
+### Conteúdos
 
 [Montagem de disco Virtual](disco-virtual/evidencias.md)
 
