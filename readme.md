@@ -7,5 +7,7 @@ Essa análise pode ser feito tanto no Windows como no Linux. Porém aqui nesse r
 
 Esse repositório está em desenvolvimento. Com o passar do tempo, vou adicionando mais conteúdos úteis.
 
+Esses vão sendo enumerados abaixo, conforme forem sendo disponibilizados.
+
 [Montagem de disco Virtual](disco-virtual/evidencias.md)
 
