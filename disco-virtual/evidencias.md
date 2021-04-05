@@ -2,23 +2,24 @@
 
 ## Escopo
 
-Esse Documento mostra como fazer montagem de uma imgem de disco virtual direto em um Desktop Linux, ou em uma Estação Forense Virtual, baseada no Sans-Sift
+Esse Documento mostra como fazer montagem de uma imgem de disco virtual direto em um Desktop Linux - de maneira resumida, e em uma Estação Forense Virtual, baseada no Sans-Sift.
+
 
 ## Maneiras de "Explorar"
 
 Primeiro Passo para realização de uma análise de Incidente é a coleta da evidência. Essa pode ser uma imagem forense, gerada por meio do ftk por exemplo, ou uma imagem de Máquina virtual que podem ter os seguintes formatos: vdi, vmdk, vmdkx, qcow, qcow2, etc..
 Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para já se econtraram instalados
 
-# Tutorial para verificação de arquivo de máquina virtual infectada.
-
 ## Arquivo: 
 imgem.vhdx
+
 ## Tipo de Vitualização:
  Windows Hyper-V
 
 Existem duas formas de explorar o arquivo no linux. Pode montar diretamente por meio do "mount", ou montar por meio de um hypervisor, por exemplo VirtualBox.
 
 # Para montar imagem de disco direto no Desktop linux:
+
  guestmount --add Caminho/arquivo/ imagem.vhdx --inspector --ro /ponto de montagem
 
 <img src="captura.png">
@@ -57,11 +58,21 @@ Quando a máquina virtual sans iniciar, entre como sudo e dê o seguinte comando
 
         # fidisk -l
     
-Lembrando que se esse disco estiver em primero, ele irá inverter a ordem dos discos. O Disco da máquina virtual sans, ele irá atribuir como sdb,  e o disco virtual adicionado ele irá atribuir como sda
+Lembrando que se esse disco estiver em primero, ele irá inverter a ordem dos discos. O Disco da máquina virtual sans, ele irá atribuir como sdb,  e o disco virtual adicionado,  ele irá atribuir como sda
 
 <img src="sans1.png">
 <img src="sans2.png">
 <img src="sans4.png">
+
+Para montar o disco, basta dar comando "mount" como exemplo:
+
+        mount /dev/(disco) /mnt/(Ponto de Montagem)
+
+        Exemplo: mount -r /dev/sda3 /mnt/windows_mount
+
+<img src="sans3.png">
+
+Importante lembrar que,  para não haver problemas, é necessário montar como somente leitura.
 
 
         
