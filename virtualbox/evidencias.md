@@ -71,11 +71,12 @@ Obs: Talvez seja  necessário alterar a ordem do boot da máquina virtual durant
 
 Quando a máquina virtual sans iniciar, entre como sudo e dê o seguinte comando para verificar se ele está encontrando o Disco virtual adicionado.
 
+<img src="sans1.png">
+
         # fidisk -l
     
 Lembrando que se esse disco estiver em primero, ele irá inverter a ordem dos discos. O Disco da máquina virtual sans, ele irá atribuir como sdb,  e o disco virtual adicionado,  ele irá atribuir como sda.
 
-<img src="sans1.png">
 <img src="sans2.png">
 <img src="sans4.png">
 
