@@ -26,7 +26,12 @@ Existem duas formas de explorar o arquivo no linux. Pode montar diretamente por 
 
 # Para montar imagem de disco direto no Desktop linux
 
- guestmount --add Caminho/arquivo/ imagem.vhdx --inspector --ro /ponto de montagem
+        # guestmount --add Caminho/arquivo/ imagem.vhdx --inspector --ro /ponto de montagem
+
+Provavelmente será necessário instalar o pacote libguestfs tools
+
+        # apt-get install libguestfs-tools
+
 
 <img src="captura.png">
 
