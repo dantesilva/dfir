@@ -14,6 +14,8 @@ Esse Documento tem como objetivo mostrar dois pontos envolvendo montagem de um D
 
 Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para analise já se econtram instalados.
 
+Existem duas formas de explorar o arquivo no linux. Pode montar diretamente por meio do "mount", ou montar por meio de um hypervisor, por exemplo VirtualBox.
+
 Nesse tutorial, utilizei uma imgem de disco baseado na Virtualização do Windows, Hyper-V. Mas pode ser utilizado para converter arquivos de disco de vários tipos de virtualizações.
 
 ## Exetensão do arquivo
@@ -24,7 +26,7 @@ Nesse tutorial, utilizei uma imgem de disco baseado na Virtualização do Window
 
  Windows Hyper-V .
 
-Existem duas formas de explorar o arquivo no linux. Pode montar diretamente por meio do "mount", ou montar por meio de um hypervisor, por exemplo VirtualBox.
+
 
 # Para montar imagem de disco direto no Desktop linux
 
