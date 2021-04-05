@@ -1,4 +1,4 @@
-# Montagem de imagem de Disco Virtual para Análise de Incidente
+# Montagem de imagem de Disco Virtual no Virtualbox para Análise de Incidente
 
 ## Escopo
 
