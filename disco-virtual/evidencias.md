@@ -2,18 +2,24 @@
 
 ## Escopo
 
-Esse Documento mostra como fazer montagem de uma imgem de disco virtual direto em um Desktop Linux - de maneira resumida, e em uma Estação Forense Virtual, baseada no Sans-Sift.
+Primeiro Passo para realização de uma análise de Incidente é a coleta da evidência. Essa coleta pode ser feita de várias formas diferentes. Vamos nos concentrar aqui em um DUMP do disc Essa pode ser uma imagem forense, gerada por meio do ftk por exemplo, ou uma imagem de Máquina virtual que podem ter os seguintes formatos: vdi, vmdk, vmdkx, qcow, qcow2, etc..
 
+Esse Documento tem como objetivo mostrar dois pontos envolvendo montagem de um Disco Vitual para analise:
+
+1 - Mostrar de maneira resumida, como montar um disco virtual em uma estação Desktop Linux
+
+2 - Mostrar como montar um disco virtual em uma estação virtual forense Sans Sift, baseado no virtualbox.
 
 ## Maneiras de "Explorar"
 
-Primeiro Passo para realização de uma análise de Incidente é a coleta da evidência. Essa pode ser uma imagem forense, gerada por meio do ftk por exemplo, ou uma imagem de Máquina virtual que podem ter os seguintes formatos: vdi, vmdk, vmdkx, qcow, qcow2, etc..
-Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para já se econtraram instalados
+Se for utilizar um Linux Desktop para fazer a análise, é importante lembrar que uma série de pacotes precisarão ser instalados para que isso possa ser possível, ao passo que a utilização de uma estação virtual forense, isso já não é necessário, visto que todos os pacotes iniciais para analise já se econtram instalados
 
 ## Arquivo: 
+
 imgem.vhdx
 
-## Tipo de Vitualização:
+## Tipo de Vitualização
+
  Windows Hyper-V
 
 Existem duas formas de explorar o arquivo no linux. Pode montar diretamente por meio do "mount", ou montar por meio de um hypervisor, por exemplo VirtualBox.
@@ -71,6 +77,8 @@ Para montar o disco, basta dar comando "mount" como exemplo:
         Exemplo: mount -r /dev/sda3 /mnt/windows_mount
 
 <img src="sans3.png">
+
+Entrando no diretório /mnt/windows_mount , na estação sift poerá visualizar os arquivos do Windows montado.
 
 Importante lembrar que,  para não haver problemas, é necessário montar como somente leitura.
 
