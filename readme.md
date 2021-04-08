@@ -1,6 +1,6 @@
 # Repositório com tutoriais para análise forense e Resposta a Incidente (Dfir)
 
-<img src="dfir.png">
+<img src="dfir_busto.png">
 
 ## Escopo
 
